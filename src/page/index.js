@@ -69,14 +69,14 @@ const playBtnIcon = document.querySelector('#play-btn i');
 
 if (startBtn && overlay) {
     startBtn.addEventListener('click', () => {
-        // if(audio) {
-        //     audio.play().then(() => {
-        //         if(playBtnIcon) {
-        //             playBtnIcon.classList.remove('fa-play');
-        //             playBtnIcon.classList.add('fa-pause');
-        //         }
-        //     }).catch(e => console.log("Erro áudio:", e));
-        // }
+        if(audio) {
+            audio.play().then(() => {
+                if(playBtnIcon) {
+                    playBtnIcon.classList.remove('fa-play');
+                    playBtnIcon.classList.add('fa-pause');
+                }
+            }).catch(e => console.log("Erro áudio:", e));
+        }
 
         overlay.classList.add('hidden');
         
@@ -89,11 +89,11 @@ if (startBtn && overlay) {
 if(playBtn) {
     playBtn.addEventListener('click', () => {
         if (audio.paused) {
-            // audio.play();
+            audio.play();
             playBtnIcon.classList.remove('fa-play');
             playBtnIcon.classList.add('fa-pause');
         } else {
-            // audio.pause();
+            audio.pause();
             playBtnIcon.classList.remove('fa-pause');
             playBtnIcon.classList.add('fa-play');
         }
