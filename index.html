@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="src/page/index.css">
+  <link rel="shortcut icon" href="src/icons/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div class="music-player">
+    <button id="play-btn"><i class="fas fa-play"></i></button>
+    <div class="track-info">
+      <span class="scrolling-text">Teu Mundo - Inulies</span>
+    </div>
+    <div class="audio-wave">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <audio id="audio-player" loop>
+      <source src="src/music.mpeg" type="audio/mpeg">
+      Seu navegador não suporta áudio.
+    </audio>
+  </div>
+
+  <main class="container">
+
+    <section class="card hero">
+      <div class="photo-frame">
+        <img src="src/photos/foto-casal.jpeg" alt="Nós dois">
+      </div>
+      <h1>Título</h1>
+      <p class="subtitle">Efeito</p>
+    </section>
+
+    <section class="card counter-section">
+      <h2>Juntos há:</h2>
+      <div id="counter">
+        <div class="time-box"><span id="days">0</span>
+          <p>Dias</p>
+        </div>
+        <div class="time-box"><span id="hours">0</span>
+          <p>Horas</p>
+        </div>
+        <div class="time-box"><span id="minutes">0</span>
+          <p>Min</p>
+        </div>
+        <div class="time-box"><span id="seconds">0</span>
+          <p>Seg</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card gallery" id="secao-fotos">
+      <h2>Nossos Momentos</h2>
+      <div class="scroll-gallery">
+        <img src="https://placehold.co/300x400" alt="Momento 1">
+        <img src="https://placehold.co/300x400" alt="Momento 2">
+        <img src="https://placehold.co/300x400" alt="Momento 3">
+      </div>
+    </section>
+
+    <section class="card letter">
+      <div class="content">
+        <h2>Para você...</h2>
+        <p>Aqui você escreve aquele texto bonito. O layout vai garantir que fique legível e centralizado no celular.</p>
+        <p>Te amo!</p>
+      </div>
+    </section>
+
+    <section class="card gallery" id="secao-fotos">
+      <h2>Nossos Momentos</h2>
+      <div class="scroll-gallery">
+        <img src="https://placehold.co/300x400" alt="Momento 1">
+        <img src="https://placehold.co/300x400" alt="Momento 2">
+        <img src="https://placehold.co/300x400" alt="Momento 3">
+      </div>
+    </section>
+
+    <section class="card letter">
+      <div class="content">
+        <h2>Para você...</h2>
+        <p>Aqui você escreve aquele texto bonito. O layout vai garantir que fique legível e centralizado no celular.</p>
+        <p>Te amo!</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="hearts-container"></div>
+
+  <div id="overlay">
+    <div class="overlay-content">
+      <h1>Para Você ❤️</h1>
+      <p>Preparei uma surpresa...</p>
+      <button id="start-btn">Ver Agora</button>
+    </div>
+  </div>
+
+  <script src="src/page/index.js"></script>
+</body>
+
+</html>
